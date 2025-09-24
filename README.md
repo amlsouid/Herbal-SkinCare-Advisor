@@ -55,4 +55,34 @@ else:
     "use": "Brightens skin and reduces inflammation",
     "warning": "Can temporarily stain skin yellow."
   }
-]
+]// Add these fields to Herb interface
+export interface Herb {
+  id: number;
+  name: string;
+  image: string;        // Main image URL
+  gallery: string[];    // Additional images
+  // ... existing fields
+}// Star rating component (1-5 stars)
+// Shows average rating and allows user ratings// Multi-criteria filtering:
+// - Skin type
+// - Problems
+// - Properties
+// - Minimum rating// User reviews and comments
+// Review form and display// Save favorite herbs to localStorage
+// Favorite/unfavorite functionality// Recommend similar herbs based on:
+// - Same skin types
+// - Same problems
+// - Same propertiessrc/
+├── components/
+│   ├── RatingSystem.tsx
+│   ├── AdvancedSearch.tsx
+│   ├── HerbReviews.tsx
+│   ├── SimilarHerbs.tsx
+│   └── FavoritesPage.tsx
+├── hooks/
+│   ├── useAdvancedFilter.ts
+│   └── useFavorites.ts
+├── types/
+│   └── review.ts
+└── utils/
+    └── similarHerbs.ts
