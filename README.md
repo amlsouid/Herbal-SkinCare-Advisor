@@ -87,7 +87,7 @@ export interface Herb {
 └── utils/
     └── similarHerbs.tsAbout the Developer
 
-Name: Amal Souid
+Name: Amel Souid
 Age: 19 years old
 Nationality: Algerian
 Specialization: AI Student
